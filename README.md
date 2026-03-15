@@ -1,1 +1,0 @@
-# 2526_ASIX1_1665_digitalitzacio_AE12_IniestaDavid_PascoArnau_PidemuntMarti_VazquezRaul

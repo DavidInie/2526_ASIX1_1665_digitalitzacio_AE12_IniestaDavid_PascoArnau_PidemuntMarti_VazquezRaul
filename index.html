@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plan de Transformación Digital — Escola Nova</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="./img/logo.png">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    EduDigital Solutions 
+  </div>
+  <ul class="nav-links">
+    <li><a href="#diagnostico">Diagnóstico</a></li>
+    <li><a href="#soluciones">Soluciones</a></li>
+    <li><a href="#objetivos">Objetivos</a></li>
+    <li><a href="#acciones">Acciones</a></li>
+    <li><a href="#temporalizacion">Plan</a></li>
+    <li><a href="#bd">Base de Datos</a></li>
+    <li><a href="#evaluacion">Evaluación</a></li>
+  </ul>
+  <div class="nav-badge">PTD 2025–2026</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+  <div class="hero-tag">EduDigital Solutions </div>
+  <h1>Hacia una<br><em>escuela digital</em><br>y sin papel</h1>
+  <p class="hero-sub">Proponemos un plan integral de digitalización para modernizar los procesos de la escuela, mejorar la comunicación y ganar eficiencia en toda la comunidad educativa.</p>
+  <div class="hero-stats">
+    <div class="stat-item">
+      <span class="stat-num">4</span>
+      <span class="stat-label">Procesos analizados</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">12</span>
+      <span class="stat-label">Soluciones propuestas</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">12m</span>
+      <span class="stat-label">Duración del plan</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">0€</span>
+      <span class="stat-label">Herramientas gratuitas</span>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- DIAGNOSTIC -->
+<section id="diagnostico" class="diagnosis">
+  <div class="section-label">Fase 1 · Diagnóstico interno</div>
+  <h2 class="section-title">Problemas detectados</h2>
+  <p class="section-sub">Análisis de los cuatro procesos principales donde la falta de digitalización genera ineficiencias, errores y pérdida de tiempo.</p>
+
+  <div class="process-grid">
+    <div class="process-card blue">
+      <div class="process-icon">🍽️</div>
+      <h3>Gestión del Comedor</h3>
+      <ul class="problem-list">
+        <li>Tickets en papel fácilmente extraviables</li>
+        <li>La lista se cierra a media mañana, sin flexibilidad</li>
+        <li>Control manual propenso a errores y duplicidades</li>
+        <li>Sin datos históricos para planificar menús</li>
+        <li>Las familias no pueden reservar desde casa</li>
+      </ul>
+    </div>
+    <div class="process-card purple">
+      <div class="process-icon">📢</div>
+      <h3>Comunicación con Familias</h3>
+      <ul class="problem-list">
+        <li>Circulares en papel que se pierden o llegan tarde</li>
+        <li>Depende de los alumnos para hacer llegar la información</li>
+        <li>No hay confirmación real de lectura</li>
+        <li>Retraso en la comunicación de urgencias</li>
+        <li>Sin historial de comunicados anteriores</li>
+      </ul>
+    </div>
+    <div class="process-card green">
+      <div class="process-icon">📋</div>
+      <h3>Comunicación Interna</h3>
+      <ul class="problem-list">
+        <li>Avisos en papel en tablones de anuncios físicos</li>
+        <li>Convocatorias de reuniones impresas</li>
+        <li>Sin registro de quién ha leído los avisos</li>
+        <li>Dificultad para encontrar comunicados antiguos</li>
+        <li>Sin canal de comunicación instantánea entre personal</li>
+      </ul>
+    </div>
+    <div class="process-card yellow">
+      <div class="process-icon">🎭</div>
+      <h3>Gestión de Extraescolares</h3>
+      <ul class="problem-list">
+        <li>Tríptico en papel con la oferta de actividades</li>
+        <li>Inscripción presencial obligatoria en secretaría</li>
+        <li>Listas de espera gestionadas manualmente</li>
+        <li>Sin visibilidad de plazas disponibles en tiempo real</li>
+        <li>Alta carga administrativa para el personal</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- DETAILED PROCESS: COMEDOR -->
+<section id="detalle-comedor" class="process-detail-section">
+  <div class="section-label">🍽️ Gestión del Comedor · Detalle completo</div>
+  <h2 class="section-title">Plan de digitalización del comedor</h2>
+  <p class="section-sub">Eliminación completa del sistema de tickets en papel y automatización de la reserva de menús, con datos de alumnos centralizados en la base de datos del centro.</p>
+  <div class="detail-grid">
+    <div class="detail-block blue-block">
+      <div class="detail-block-header">🔍 Diagnóstico interno</div>
+      <p class="detail-intro">El proceso actual requiere que el alumno <strong>compre un ticket físico en secretaría</strong> y se apunte en una lista en conserjería antes de media mañana:</p>
+      <ul class="detail-list">
+        <li>Tickets en papel que se pierden o deterioran fácilmente</li>
+        <li>La lista cierra a media mañana sin posibilidad de cambios tardíos</li>
+        <li>El personal del comedor recoge la lista manualmente y la lleva a cocina</li>
+        <li>La cocinera comprueba manualmente quién ha asistido y ha entregado el ticket</li>
+        <li>Sin datos históricos de tendencias para planificar menús</li>
+        <li>Las familias no pueden gestionar la reserva fuera del horario escolar</li>
+      </ul>
+    </div>
+    <div class="detail-block">
+      <div class="detail-block-header">💡 Propuestas de soluciones</div>
+      <ul class="detail-list check">
+        <li><strong>App/formulario de reserva online</strong> — Las familias reservan el menú desde el móvil hasta las 9h. Datos del alumno integrados con la BD central</li>
+        <li><strong>Lista digital automática</strong> — El personal del comedor recibe la lista actualizada en tiempo real sin necesidad de recogerla físicamente</li>
+        <li><strong>Pago digital integrado</strong> — Bizum, PayPal o domiciliación bancaria con registro automático de pagos</li>
+        <li><strong>Notificaciones automáticas</strong> — Confirmación por correo o WhatsApp Business</li>
+        <li><strong>Panel de gestión</strong> — Google Sheets conectado a formulario con datos históricos y estadísticas de uso</li>
+      </ul>
+    </div>
+    <div class="detail-block">
+      <div class="detail-block-header">🎯 Objetivos del PTD</div>
+      <ul class="detail-list check">
+        <li>Eliminar los tickets en papel al 100%</li>
+        <li>Permitir la reserva online 24/7 desde cualquier dispositivo</li>
+        <li>Automatizar la entrega de la lista a cocina cada mañana</li>
+        <li>Reducir errores de control de asistencia al comedor</li>
+        <li>Obtener datos históricos para planificación de menús</li>
+        <li>Reducir el tiempo administrativo en un 60%</li>
+      </ul>
+    </div>
+    <div class="detail-block">
+      <div class="detail-block-header">⚙️ Acciones concretas</div>
+      <ol class="detail-list ordered">
+        <li>Diseñar el formulario de reserva vinculado a la BD de alumnos</li>
+        <li>Configurar Google Sheets como panel de gestión del comedor</li>
+        <li>Integrar sistema de pago digital (Bizum/PayPal)</li>
+        <li>Configurar envío automático de la lista diaria a cocina</li>
+        <li>Formar al personal de comedor y secretaría en la nueva herramienta</li>
+        <li>Período de prueba piloto durante 2 semanas antes del lanzamiento</li>
+      </ol>
+    </div>
+    </div>
+    <div class="detail-block">
+      <div class="detail-block-header">🛠️ Recursos necesarios</div>
+      <ul class="detail-list">
+        <li><strong>Herramientas:</strong> Google Forms, Google Sheets, Bizum/PayPal, WhatsApp Business, BD central de alumnos</li>
+        <li><strong>Personal:</strong> Responsable TI, personal de secretaría, personal de comedor</li>
+        <li><strong>Hardware:</strong> Tablet en comedor para consulta de la lista digital</li>
+      </ul>
+    </div>
+    <div class="detail-block">
+      <div class="detail-block-header">👥 Responsables</div>
+      <ul class="detail-list">
+        <li><strong>Dirección</strong> — Supervisión y aprobación del proceso</li>
+        <li><strong>Responsable TI</strong> — Implementación técnica y BD</li>
+        <li><strong>Secretaría</strong> — Control diario y gestión de incidencias</li>
+        <li><strong>Personal comedor</strong> — Uso de la lista digital diaria</li>
+      </ul>
+    </div>
+    <div class="detail-block full-width">
+      <div class="detail-block-header">📊 Seguimiento y evaluación</div>
+      <div class="eval-pills">
+        <span class="eval-pill blue-pill">Nº de reservas online vs. manual</span>
+        <span class="eval-pill blue-pill">Errores en la lista diaria (antes/después)</span>
+        <span class="eval-pill blue-pill">Encuestas de satisfacción a familias</span>
+        <span class="eval-pill blue-pill">Tiempo de gestión administrativo</span>
+        <span class="eval-pill blue-pill">Reducción del uso de papel</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- DETAILED PROCESS: COMUNICACIÓN FAMILIAS -->
+<section id="detalle-familias" class="process-detail-section">
+  <div class="section-label">📢 Comunicación con Familias · Detalle completo</div>
+  <h2 class="section-title">Plan de digitalización de la comunicación familiar</h2>
+  <p class="section-sub">Sustitución de las circulares en papel por una plataforma digital que garantice la recepción y confirmación de lectura por parte de todas las familias.</p>
+  <div class="detail-grid">
+    <div class="detail-block purple-block">
+      <div class="detail-block-header">🔍 Diagnóstico interno</div>
+      <p class="detail-intro">Actualmente los comunicados se envían <strong>en papel a través de los estudiantes</strong>, con múltiples problemas:</p>
+      <ul class="detail-list">
+        <li>Cartas que se pierden, se deterioran o el alumno olvida entregar</li>
+        <li>No hay garantía de que los padres reciban la información</li>
+        <li>Los estudiantes deben devolver un comprobante firmado para confirmar recepción</li>
+        <li>Retraso de 24-48h en la comunicación de cualquier aviso</li>
+        <li>Imposible comunicar urgencias fuera del horario escolar con rapidez</li>
+        <li>Sin historial de comunicados para consulta posterior</li>
+      </ul>
+    </div>
+    <div class="detail-block">
+      <div class="detail-block-header">💡 Propuestas de soluciones</div>
+      <ul class="detail-list check">
+        <li><strong>Plataforma de comunicación digital</strong> — ClassDojo o iSèl para enviar comunicados con confirmación de lectura automática</li>
+        <li><strong>Notificaciones push instantáneas</strong> — Las familias reciben alertas en el móvil en tiempo real</li>
+        <li><strong>Historial de comunicados</strong> — Archivo digital accesible para familias y tutores en cualquier momento</li>
+        <li><strong>Canal de urgencias</strong> — Comunicación directa para emergencias médicas o cambios de última hora</li>
+        <li><strong>Datos de contacto desde BD central</strong> — Los datos de los tutores legales se obtienen de la BD de alumnos del centro automáticamente</li>
+      </ul>
+    </div>
+    <div class="detail-block">
+      <div class="detail-block-header">🎯 Objetivos del PTD</div>
+      <ul class="detail-list check">
+        <li>Alcanzar un 95% de confirmaciones de lectura de comunicados</li>
+        <li>Reducir el tiempo de transmisión de información a menos de 5 minutos</li>
+        <li>Eliminar completamente las circulares en papel</li>
+        <li>Mejorar la satisfacción de las familias con la comunicación escolar</li>
+        <li>Garantizar la comunicación eficaz en situaciones de emergencia</li>
+      </ul>
+    </div>
+    <div class="detail-block">
+      <div class="detail-block-header">⚙️ Acciones concretas</div>
+      <ol class="detail-list ordered">
+        <li>Seleccionar y configurar la plataforma (ClassDojo / iSèl / Google Classroom)</li>
+        <li>Importar datos de contacto de familias desde la BD central de alumnos</li>
+        <li>Crear grupos por curso y etapa educativa</li>
+        <li>Formación a tutores y coordinadores en el uso de la plataforma</li>
+        <li>Comunicar el cambio a las familias con sesión informativa presencial</li>
+        <li>Primer comunicado digital enviado en el mes 3</li>
+      </ol>
+    </div>
+    </div>
+    <div class="detail-block">
+      <div class="detail-block-header">🛠️ Recursos necesarios</div>
+      <ul class="detail-list">
+        <li><strong>Herramientas:</strong> ClassDojo / iSèl / Google Classroom, BD central de alumnos</li>
+        <li><strong>Personal:</strong> Coordinador pedagógico, tutores, responsable TI</li>
+        <li><strong>Formación:</strong> 2h por docente + 1h sesión informativa familias</li>
+      </ul>
+    </div>
+    <div class="detail-block">
+      <div class="detail-block-header">👥 Responsables</div>
+      <ul class="detail-list">
+        <li><strong>Dirección</strong> — Aprobación y comunicación del cambio</li>
+        <li><strong>Coordinador pedagógico</strong> — Coordinación con tutores</li>
+        <li><strong>Tutores</strong> — Emisión de comunicados por curso</li>
+        <li><strong>Responsable TI</strong> — Mantenimiento técnico y BD</li>
+      </ul>
+    </div>
+    <div class="detail-block full-width">
+      <div class="detail-block-header">📊 Seguimiento y evaluación</div>
+      <div class="eval-pills">
+        <span class="eval-pill purple-pill">% familias con confirmación de lectura</span>
+        <span class="eval-pill purple-pill">Tiempo medio de entrega del comunicado</span>
+        <span class="eval-pill purple-pill">Encuestas de satisfacción trimestrales</span>
+        <span class="eval-pill purple-pill">Reducción de papel en comunicaciones</span>
+        <span class="eval-pill purple-pill">Incidencias de no recepción reportadas</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- DETAILED PROCESS: COMUNICACIÓN INTERNA -->
+<section id="detalle-interna" class="process-detail-section">
+  <div class="section-label">📋 Comunicación Interna · Detalle completo</div>
+  <h2 class="section-title">Plan de digitalización de la comunicación interna</h2>
+  <p class="section-sub">Sustitución de los tablones físicos y notas impresas por una plataforma digital colaborativa que permita la comunicación instantánea entre todo el personal del centro.</p>
+  <div class="detail-grid">
+    <div class="detail-block green-block">
+      <div class="detail-block-header">🔍 Diagnóstico interno</div>
+      <p class="detail-intro">Los avisos internos se distribuyen <strong>en papel a través de tablones de anuncios</strong> y notas impresas, generando múltiples problemas:</p>
+      <ul class="detail-list">
+        <li>Avisos físicos que no siempre son vistos por todo el personal</li>
+        <li>Las convocatorias de reunión se imprimen y pegan en tablones</li>
+        <li>Sin registro de quién ha leído cada comunicado interno</li>
+        <li>Difícil acceso a comunicados pasados o normas del centro</li>
+        <li>Sin canal de comunicación urgente entre docentes</li>
+        <li>Coordinación entre departamentos ineficiente y lenta</li>
+      </ul>
+    </div>
+    <div class="detail-block">
+      <div class="detail-block-header">💡 Propuestas de soluciones</div>
+      <ul class="detail-list check">
+        <li><strong>Google Workspace for Education</strong> — Gmail, Drive y Calendario compartidos para toda la organización del centro (gratuito)</li>
+        <li><strong>Canal de mensajería instantánea</strong> — Slack o Google Chat para comunicación rápida entre equipos y departamentos</li>
+        <li><strong>Convocatorias digitales</strong> — Google Calendar con invitaciones automáticas y recordatorios para todas las reuniones</li>
+        <li><strong>Google Meet</strong> — Reuniones virtuales para personal que no pueda asistir presencialmente</li>
+        <li><strong>Tablón digital</strong> — Espacio compartido en Google Sites para avisos y normativa permanente del centro</li>
+      </ul>
+    </div>
+    <div class="detail-block">
+      <div class="detail-block-header">🎯 Objetivos del PTD</div>
+      <ul class="detail-list check">
+        <li>Garantizar que el 100% del personal reciba los avisos en tiempo real</li>
+        <li>Eliminar el uso de papel en comunicaciones internas</li>
+        <li>Centralizar toda la información del centro en un espacio digital accesible</li>
+        <li>Reducir el tiempo de convocatoria y organización de reuniones</li>
+        <li>Mejorar la coordinación entre departamentos y tutores</li>
+        <li>Crear un repositorio digital de normativa y documentación del centro</li>
+      </ul>
+    </div>
+    <div class="detail-block">
+      <div class="detail-block-header">⚙️ Acciones concretas</div>
+      <ol class="detail-list ordered">
+        <li>Activar Google Workspace for Education (gratuito para centros educativos)</li>
+        <li>Crear cuentas institucionales para todo el personal del centro</li>
+        <li>Configurar grupos y canales por departamento en Google Chat / Slack</li>
+        <li>Migrar el calendario de reuniones a Google Calendar con invitaciones</li>
+        <li>Crear el tablón digital compartido con normativa y avisos permanentes</li>
+        <li>Formación de 2 horas al personal sobre el uso de las herramientas</li>
+      </ol>
+    </div>
+    </div>
+    <div class="detail-block">
+      <div class="detail-block-header">🛠️ Recursos necesarios</div>
+      <ul class="detail-list">
+        <li><strong>Herramientas:</strong> Google Workspace for Education (gratuito), Google Chat / Slack, Google Meet, Google Sites</li>
+        <li><strong>Personal:</strong> Técnico informático, coordinador pedagógico, personal administrativo</li>
+        <li><strong>Hardware:</strong> Ordenadores con acceso a internet para todo el personal</li>
+      </ul>
+    </div>
+    <div class="detail-block">
+      <div class="detail-block-header">👥 Responsables</div>
+      <ul class="detail-list">
+        <li><strong>Dirección</strong> — Liderazgo del cambio y comunicación al claustro</li>
+        <li><strong>Técnico informático</strong> — Configuración técnica y soporte</li>
+        <li><strong>Coordinador pedagógico</strong> — Supervisión adopción del profesorado</li>
+        <li><strong>Secretaría</strong> — Gestión del tablón digital y avisos generales</li>
+      </ul>
+    </div>
+    <div class="detail-block full-width">
+      <div class="detail-block-header">📊 Seguimiento y evaluación</div>
+      <div class="eval-pills">
+        <span class="eval-pill green-pill">% de personal que usa diariamente la plataforma</span>
+        <span class="eval-pill green-pill">Nº de reuniones convocadas digitalmente</span>
+        <span class="eval-pill green-pill">Reducción del uso de papel interno</span>
+        <span class="eval-pill green-pill">Encuesta de satisfacción al personal</span>
+        <span class="eval-pill green-pill">Tiempo de respuesta a comunicados urgentes</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- DETAILED PROCESS: EXTRAESCOLARES -->
+<section id="detalle-extraescolares" class="process-detail-section">
+  <div class="section-label">🎭 Gestión de Extraescolares · Detalle completo</div>
+  <h2 class="section-title">Plan de digitalización de actividades extraescolares</h2>
+  <p class="section-sub">Digitalización completa del proceso de inscripción y gestión de actividades extraescolares para mejorar la comodidad de las familias y la eficiencia administrativa.</p>
+  <div class="detail-grid">
+    <div class="detail-block yellow-block">
+      <div class="detail-block-header">🔍 Diagnóstico interno</div>
+      <p class="detail-intro">Actualmente, la inscripción se realiza <strong>presencialmente en secretaría</strong>, con varios problemas:</p>
+      <ul class="detail-list">
+        <li>Colas largas y esperas que causan incomodidad a las familias</li>
+        <li>Riesgo de errores manuales: duplicidades u omisiones de datos</li>
+        <li>Dificultad para controlar plazas disponibles y planificar actividades</li>
+        <li>Las familias no pueden inscribirse desde casa fuera del horario de secretaría</li>
+        <li>Alta carga administrativa para el personal de secretaría</li>
+        <li>Sin visibilidad de listas de espera para las familias</li>
+      </ul>
+    </div>
+    <div class="detail-block">
+      <div class="detail-block-header">💡 Propuestas de soluciones</div>
+      <ul class="detail-list check">
+        <li><strong>Formulario online o portal web</strong> — Google Forms / Microsoft Forms integrados en la web del centro, con datos del alumno pre-rellenados desde la BD</li>
+        <li><strong>Pago digital integrado</strong> — Stripe, PayPal o Bizum con registro automático en la BD</li>
+        <li><strong>Notificaciones automáticas</strong> — Confirmación por email o WhatsApp y recordatorios de inicio de actividades</li>
+        <li><strong>Base de datos centralizada</strong> — Seguimiento en tiempo real de plazas, pagos e incidencias vinculado a la BD de alumnos del centro</li>
+        <li><strong>Lista de espera automática</strong> — Gestión digital de esperas con notificación al liberarse una plaza</li>
+      </ul>
+    </div>
+    <div class="detail-block">
+      <div class="detail-block-header">🎯 Objetivos del PTD</div>
+      <ul class="detail-list check">
+        <li>Facilitar la inscripción para las familias, accesible 24/7</li>
+        <li>Mejorar la gestión de plazas y pagos de forma digital y fiable</li>
+        <li>Reducir la carga administrativa del personal de secretaría</li>
+        <li>Incrementar la satisfacción de familias y alumnos</li>
+        <li>Generar datos útiles para planificar actividades futuras</li>
+        <li>Automatizar la gestión de listas de espera sin intervención manual</li>
+      </ul>
+    </div>
+    <div class="detail-block">
+      <div class="detail-block-header">⚙️ Acciones concretas</div>
+      <ol class="detail-list ordered">
+        <li>Diseñar los formularios web vinculados a la BD de alumnos del centro</li>
+        <li>Implementar la plataforma de inscripción en la web del centro</li>
+        <li>Integrar el sistema de pago digital</li>
+        <li>Configurar notificaciones automáticas de confirmación y recordatorios</li>
+        <li>Capacitar al personal para gestionar inscripciones y datos en el panel</li>
+        <li>Pruebas internas y ajustes antes del lanzamiento oficial</li>
+      </ol>
+    </div>
+    </div>
+    <div class="detail-block">
+      <div class="detail-block-header">🛠️ Recursos necesarios</div>
+      <ul class="detail-list">
+        <li><strong>Herramientas:</strong> Google Forms, portal web, Stripe/PayPal/Bizum, WhatsApp Business, BD central de alumnos</li>
+        <li><strong>Personal:</strong> Responsable TI, personal de secretaría, docente coordinador</li>
+      </ul>
+    </div>
+    <div class="detail-block">
+      <div class="detail-block-header">👥 Responsables</div>
+      <ul class="detail-list">
+        <li><strong>Dirección</strong> — Supervisión general</li>
+        <li><strong>Responsable TI</strong> — Implementación técnica y BD</li>
+        <li><strong>Secretaría</strong> — Control diario de inscripciones</li>
+        <li><strong>Docente coordinador</strong> — Planificación y seguimiento de actividades</li>
+      </ul>
+    </div>
+    <div class="detail-block full-width">
+      <div class="detail-block-header">📊 Seguimiento y evaluación</div>
+      <div class="eval-pills">
+        <span class="eval-pill">Comparar errores vs. método manual</span>
+        <span class="eval-pill">Encuestas de satisfacción a familias</span>
+        <span class="eval-pill">Medir reducción del tiempo administrativo</span>
+        <span class="eval-pill">Verificar registro de plazas y pagos</span>
+        <span class="eval-pill">Revisiones periódicas y ajustes</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SOLUTIONS -->
+<section id="soluciones">
+  <div class="section-label">Fase 2 · Propuesta de soluciones</div>
+  <h2 class="section-title">Soluciones de digitalización</h2>
+  <p class="section-sub">Para cada problema detectado proponemos herramientas digitales concretas, mayoritariamente gratuitas y fáciles de adoptar por todo el equipo.</p>
+  <div class="solutions-grid">
+    <div class="solution-card">
+      <div class="solution-header">
+        <div class="solution-icon">🍽️</div>
+        <h3>App de reserva de comedor</h3>
+      </div>
+      <p>Las familias reservan el menú desde el móvil hasta las 9h. El personal del comedor recibe la lista digital automáticamente. Pago integrado y datos del alumno desde la BD central.</p>
+      <div class="tool-tags">
+        <span class="tool-tag">Google Forms</span>
+        <span class="tool-tag">Google Sheets</span>
+        <span class="tool-tag">Bizum/PayPal</span>
+      </div>
+    </div>
+    <div class="solution-card">
+      <div class="solution-header">
+        <div class="solution-icon">📱</div>
+        <h3>App de comunicación con familias</h3>
+      </div>
+      <p>Plataforma digital para enviar comunicados, notificaciones instantáneas y recoger respuestas. Confirmación de lectura automática. Contactos importados de la BD de alumnos.</p>
+      <div class="tool-tags">
+        <span class="tool-tag">ClassDojo</span>
+        <span class="tool-tag">iSèl</span>
+        <span class="tool-tag">Google Classroom</span>
+      </div>
+    </div>
+    <div class="solution-card">
+      <div class="solution-header">
+        <div class="solution-icon">💬</div>
+        <h3>Canal de comunicación interna</h3>
+      </div>
+      <p>Sustitución de los tablones físicos por un espacio digital donde los avisos llegan a todo el personal al instante. Reuniones con invitación digital y videollamada integrada.</p>
+      <div class="tool-tags">
+        <span class="tool-tag">Google Workspace</span>
+        <span class="tool-tag">Slack</span>
+        <span class="tool-tag">Google Meet</span>
+      </div>
+    </div>
+    <div class="solution-card">
+      <div class="solution-header">
+        <div class="solution-icon">🎭</div>
+        <h3>Portal de inscripción de extraescolares</h3>
+      </div>
+      <p>Web o formulario online con todas las actividades, plazas disponibles en tiempo real e inscripción desde casa. Lista de espera automática y pagos integrados.</p>
+      <div class="tool-tags">
+        <span class="tool-tag">Google Forms</span>
+        <span class="tool-tag">WordPress</span>
+        <span class="tool-tag">Wix</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- OBJECTIVES -->
+<section id="objetivos" class="objectives">
+  <div class="section-label">Objetivos del PTD</div>
+  <h2 class="section-title">Qué queremos conseguir</h2>
+  <p class="section-sub">Seis objetivos clave que guían todo el plan de transformación digital de la escuela.</p>
+  <div class="obj-grid">
+    <div class="obj-item">
+      <div class="obj-num">01</div>
+      <h4>Eliminar el papel</h4>
+      <p>Reducir en un 80% el uso de papel en comunicaciones y gestiones internas del centro.</p>
+    </div>
+    <div class="obj-item">
+      <div class="obj-num">02</div>
+      <h4>Comunicación en tiempo real</h4>
+      <p>Las familias reciben notificaciones instantáneas sin depender de los alumnos como intermediarios.</p>
+    </div>
+    <div class="obj-item">
+      <div class="obj-num">03</div>
+      <h4>Automatizar procesos</h4>
+      <p>Eliminar tareas manuales repetitivas en el comedor, extraescolares y comunicaciones.</p>
+    </div>
+    <div class="obj-item">
+      <div class="obj-num">04</div>
+      <h4>Ahorro de tiempo</h4>
+      <p>Reducir el tiempo administrativo del personal en un 50% en los procesos afectados.</p>
+    </div>
+    <div class="obj-item">
+      <div class="obj-num">05</div>
+      <h4>Mejora de la experiencia</h4>
+      <p>Familias y personal con acceso a la información desde cualquier dispositivo, en cualquier momento.</p>
+    </div>
+    <div class="obj-item">
+      <div class="obj-num">06</div>
+      <h4>Cultura digital</h4>
+      <p>Fomentar la adopción de tecnología entre todo el personal del centro educativo.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ACTIONS -->
+<section id="acciones">
+  <div class="section-label">Acciones · Herramientas de digitalización</div>
+  <h2 class="section-title">Qué vamos a implementar</h2>
+  <p class="section-sub">Soluciones específicas para cada proceso, con las herramientas concretas que se utilizarán en cada digitalización.</p>
+  <div class="actions-grid">
+    <div class="action-item">
+      <div class="action-num blue-num">A1</div>
+      <div class="action-content">
+        <h4>Formulario de reserva de comedor online</h4>
+        <p>Google Forms conectado a Google Sheets. Acceso desde móvil. Datos del alumno precargados desde la BD central. Notificación automática por email. Lista enviada a cocina automáticamente cada mañana vía Apps Script.</p>
+        <div class="tool-tags" style="margin-top:0.8rem;">
+          <span class="tool-tag">Google Forms</span><span class="tool-tag">Google Sheets</span><span class="tool-tag">Apps Script</span>
+        </div>
+      </div>
+    </div>
+    <div class="action-item">
+      <div class="action-num purple-num">A2</div>
+      <div class="action-content">
+        <h4>Plataforma de comunicación con familias</h4>
+        <p>Implementación de ClassDojo o iSèl para todos los cursos. Creación de grupos por clase. Activación de notificaciones push. Histórico de comunicados accesible para familias y tutores en todo momento.</p>
+        <div class="tool-tags" style="margin-top:0.8rem;">
+          <span class="tool-tag">ClassDojo</span><span class="tool-tag">iSèl</span><span class="tool-tag">Google Classroom</span>
+        </div>
+      </div>
+    </div>
+    <div class="action-item">
+      <div class="action-num green-num">A3</div>
+      <div class="action-content">
+        <h4>Google Workspace para comunicación interna</h4>
+        <p>Activación de Google Workspace for Education. Creación de cuentas institucionales para todo el personal. Configuración de Google Chat por departamentos. Calendario compartido. Tablón digital en Google Sites.</p>
+        <div class="tool-tags" style="margin-top:0.8rem;">
+          <span class="tool-tag">Google Workspace</span><span class="tool-tag">Google Chat</span><span class="tool-tag">Google Meet</span>
+        </div>
+      </div>
+    </div>
+    <div class="action-item">
+      <div class="action-num yellow-num">A4</div>
+      <div class="action-content">
+        <h4>Portal de inscripción de extraescolares</h4>
+        <p>Formulario web con catálogo de actividades, plazas en tiempo real y pago integrado. Gestión automática de lista de espera. Vinculación con la BD central de alumnos para minimizar datos a rellenar.</p>
+        <div class="tool-tags" style="margin-top:0.8rem;">
+          <span class="tool-tag">Google Forms</span><span class="tool-tag">WordPress/Wix</span><span class="tool-tag">Stripe/Bizum</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- TIMELINE -->
+<section id="temporalizacion">
+  <div class="section-label">Temporalización</div>
+  <h2 class="section-title">Cuándo se implementa</h2>
+  <p class="section-sub">El plan se despliega en fases durante 12 meses para no sobrecargar al equipo y asegurar una buena adopción por parte de todo el personal del centro.</p>
+  <div class="timeline-wrap">
+    <div class="timeline-item">
+      <div class="timeline-dot">M1</div>
+      <div class="timeline-content">
+        <span class="timeline-phase">Mes 1–2</span>
+        <h4>Formación y preparación</h4>
+        <p>Sesiones de formación para todo el personal. Creación de cuentas y configuración de Google Workspace. Implantación y población de la base de datos centralizada de alumnos del centro.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot">M3</div>
+      <div class="timeline-content">
+        <span class="timeline-phase">Mes 3–4</span>
+        <h4>Comunicación digital con familias</h4>
+        <p>Activación de ClassDojo o iSèl. Primera circular digital enviada. Formación específica a tutores. Importación de datos de contacto desde la BD central de alumnos.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot">M5</div>
+      <div class="timeline-content">
+        <span class="timeline-phase">Mes 5–6</span>
+        <h4>Sistema de comedor digital</h4>
+        <p>Puesta en marcha del formulario de reserva online vinculado a la BD central. Eliminación de los tickets de papel. Activación del sistema de pago digital integrado.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot">M7</div>
+      <div class="timeline-content">
+        <span class="timeline-phase">Mes 7–8</span>
+        <h4>Portal de extraescolares</h4>
+        <p>Creación del portal web de inscripción conectado a la BD de alumnos. Primera inscripción 100% digital para el curso siguiente. Pago integrado activo.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot">M9</div>
+      <div class="timeline-content">
+        <span class="timeline-phase">Mes 9–12</span>
+        <h4>Evaluación y mejora continua</h4>
+        <p>Revisión de resultados, encuestas de satisfacción y ajustes finales del plan. Presentación de resultados y memoria anual a la dirección del centro.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- BASE DE DATOS -->
+<section id="bd" class="bd-section">
+  <div class="section-label">Base de Datos · Alumnos</div>
+  <h2 class="section-title">Una sola base de datos para todo el centro</h2>
+  <p class="section-sub">Todos los módulos digitales del plan (comedor, comunicación con familias, comunicación interna y extraescolares) comparten una única base de datos centralizada de alumnos, evitando duplicidades y garantizando la coherencia de los datos en toda la escuela.</p>
+
+  <!-- DIAGRAMA SIMPLE -->
+  <div class="bd-simple">
+    <div class="bd-simple-module blue-sm">🍽️ Comedor</div>
+    <div class="bd-simple-module purple-sm">📢 Familias</div>
+    <div class="bd-simple-core">🗄️<span>BD Alumnos</span></div>
+    <div class="bd-simple-module green-sm">📋 Com. Interna</div>
+    <div class="bd-simple-module yellow-sm">🎭 Extraescolares</div>
+  </div>
+
+  <!-- TABLA DE CAMPOS -->
+  <div class="bd-table-wrap" style="margin:2rem 0;">
+    <table class="bd-table">
+      <thead>
+        <tr><th>Campo</th><th>Tipo</th><th>Usado en</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>ID Alumno</td><td>Integer (PK)</td><td>Todos los módulos</td></tr>
+        <tr><td>Nombre completo</td><td>Varchar</td><td>Todos los módulos</td></tr>
+        <tr><td>Curso / Grupo</td><td>Varchar</td><td>Comedor, Familias, Interna</td></tr>
+        <tr><td>Email tutor legal 1</td><td>Email</td><td>Familias, Comedor, Extraescolares</td></tr>
+        <tr><td>Email tutor legal 2</td><td>Email</td><td>Familias, Extraescolares</td></tr>
+        <tr><td>Teléfono contacto</td><td>Varchar</td><td>Familias, Urgencias</td></tr>
+        <tr><td>Alérgenos / Dieta especial</td><td>Text</td><td>Comedor</td></tr>
+        <tr><td>Actividades extraescolares</td><td>FK</td><td>Extraescolares</td></tr>
+        <tr><td>Reservas comedor</td><td>FK</td><td>Comedor</td></tr>
+        <tr><td>Comunicados enviados</td><td>FK</td><td>Familias</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- BLOQUE PRIVACIDAD -->
+  <div class="bd-block full-width" style="margin-top:2rem;">
+      <div class="bd-block-header">🛡️ Seguridad y privacidad de los datos (RGPD)</div>
+      <div class="bd-privacy-grid">
+        <div class="privacy-item">
+          <div class="privacy-icon">🔒</div>
+          <h5>Acceso por roles</h5>
+          <p>Cada usuario solo puede acceder a los datos que necesita para su función. Dirección, secretaría, docentes y personal de comedor tienen permisos diferenciados.</p>
+        </div>
+        <div class="privacy-item">
+          <div class="privacy-icon">📝</div>
+          <h5>Consentimiento informado</h5>
+          <p>Las familias firman un consentimiento digital al inicio del curso para el tratamiento de datos conforme al RGPD y la LOPDGDD española.</p>
+        </div>
+        <div class="privacy-item">
+          <div class="privacy-icon">🔐</div>
+          <h5>Cifrado y copias de seguridad</h5>
+          <p>Los datos se almacenan cifrados. Copias de seguridad automáticas diarias. Alojamiento en servidores europeos con certificación ISO 27001.</p>
+        </div>
+        <div class="privacy-item">
+          <div class="privacy-icon">🗑️</div>
+          <h5>Política de retención</h5>
+          <p>Los datos de alumnos se eliminan automáticamente pasados 5 años desde la baja del alumno, cumpliendo con la normativa vigente de protección de datos en educación.</p>
+        </div>
+      </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- RESOURCES -->
+<section id="recursos" class="resources">
+  <div class="section-label">Recursos necesarios</div>
+  <h2 class="section-title">Herramientas y personas</h2>
+  <p class="section-sub">Los recursos tecnológicos y humanos necesarios para llevar adelante el plan de transformación digital del centro.</p>
+  <div class="resources-grid">
+    <div class="resource-block">
+      <h3>💻 Herramientas tecnológicas</h3>
+      <ul class="resource-list">
+        <li><span class="ico">📧</span> Google Workspace for Education (gratuito)</li>
+        <li><span class="ico">📱</span> ClassDojo – comunicación con familias</li>
+        <li><span class="ico">📋</span> Google Forms – formularios online</li>
+        <li><span class="ico">📊</span> Google Sheets – gestión de datos y BD</li>
+        <li><span class="ico">🌐</span> Wix / WordPress – portal de extraescolares</li>
+        <li><span class="ico">📹</span> Google Meet – reuniones virtuales</li>
+        <li><span class="ico">🗄️</span> BD central MySQL / Google Sheets integrado</li>
+      </ul>
+    </div>
+    <div class="resource-block">
+      <h3>👥 Recursos humanos</h3>
+      <ul class="resource-list">
+        <li><span class="ico">🎓</span> Responsable de transformación digital</li>
+        <li><span class="ico">🖥️</span> Técnico informático del centro</li>
+        <li><span class="ico">📚</span> Coordinador pedagógico</li>
+        <li><span class="ico">👩‍💼</span> Personal de secretaría (formación)</li>
+        <li><span class="ico">👨‍🍳</span> Personal del comedor (formación)</li>
+        <li><span class="ico">👨‍🏫</span> Tutores de cada curso</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- RESPONSIBLE -->
+<section id="responsables">
+  <div class="section-label">Responsables</div>
+  <h2 class="section-title">Quién coordina cada acción</h2>
+  <p class="section-sub">Cada área del plan tiene un responsable claro que coordina y supervisa la implementación en su módulo correspondiente.</p>
+  <div class="resp-grid">
+    <div class="resp-card">
+      <div class="avatar" style="background:rgba(59,130,246,0.15);">👩‍💼</div>
+      <h4>Raúl Vázquez</h4>
+      <div class="role">Coordinador del comedor</div>
+      <span class="area blue">Comedor</span>
+    </div>
+    <div class="resp-card">
+      <div class="avatar" style="background:rgba(139,92,246,0.15);">👨‍🏫</div>
+      <h4>David Iniesta</h4>
+      <div class="role">Responsable pedagógico</div>
+      <span class="area purple">Familias</span>
+    </div>
+    <div class="resp-card">
+      <div class="avatar" style="background:rgba(16,185,129,0.15);">🖥️</div>
+      <h4>Arnau Pascó</h4>
+      <div class="role">Técnico informático</div>
+      <span class="area green">Comunicación interna</span>
+    </div>
+    <div class="resp-card">
+      <div class="avatar" style="background:rgba(245,158,11,0.15);">📋</div>
+      <h4>Martí Pidemunt</h4>
+      <div class="role">Secretaría</div>
+      <span class="area yellow">Extraescolares</span>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- EVALUATION -->
+<section id="evaluacion" class="evaluation">
+  <div class="section-label">Fase 4 · Seguimiento y evaluación</div>
+  <h2 class="section-title">Cómo medimos el éxito</h2>
+  <p class="section-sub">Indicadores clave de rendimiento y métodos de evaluación para verificar que el plan alcanza sus objetivos en cada proceso digitalizado.</p>
+  <div class="kpi-grid">
+    <div class="kpi-card">
+      <div class="kpi-value">80%</div>
+      <div class="kpi-label">Reducción en el uso de papel en comunicaciones</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-value">95%</div>
+      <div class="kpi-label">Familias que confirman leer los comunicados</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-value">−50%</div>
+      <div class="kpi-label">Tiempo dedicado a tareas administrativas manuales</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-value">100%</div>
+      <div class="kpi-label">Inscripciones de extraescolares realizadas online</div>
+    </div>
+  </div>
+  <div class="eval-methods" style="margin-top:2rem;">
+    <div class="eval-method">
+      <div class="num">01</div>
+      <div>
+        <h4>Encuestas de satisfacción</h4>
+        <p>Encuestas trimestrales a familias y personal para valorar la adopción de las herramientas digitales en los cuatro procesos.</p>
+      </div>
+    </div>
+    <div class="eval-method">
+      <div class="num">02</div>
+      <div>
+        <h4>Revisión de KPIs mensual</h4>
+        <p>El responsable del PTD revisa los indicadores cada mes y reporta a la dirección con datos extraídos directamente de la BD.</p>
+      </div>
+    </div>
+    <div class="eval-method">
+      <div class="num">03</div>
+      <div>
+        <h4>Reuniones de seguimiento</h4>
+        <p>Reuniones trimestrales del equipo del PTD para detectar problemas, revisar el plan y hacer ajustes necesarios en cada módulo.</p>
+      </div>
+    </div>
+    <div class="eval-method">
+      <div class="num">04</div>
+      <div>
+        <h4>Informe anual</h4>
+        <p>Memoria final del primer año de implementación con resultados, datos de la BD y propuesta de mejoras para el siguiente curso.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">
+    <span></span>
+    Escola Nova · Plan de Transformación Digital
+  </div>
+  <p>Elaborado por el equipo de digitalización · Curso 2025–2026</p>
+  <p style="font-size:0.78rem;">ASIX · Digitalización · RA6 Actividad 12</p>
+</footer>
+
+</body>
+</html>
